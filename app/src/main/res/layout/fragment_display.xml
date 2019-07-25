@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayFragment"
+    android:elevation="4dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more"
+        android:layout_alignParentEnd="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    <HorizontalScrollView
+        android:layout_below="@+id/btn_menu"
+        style="@style/ScrollViewDisplay">
+
+        <TextView
+            android:id="@+id/tv_display"
+            tools:text="123+789"
+            android:layout_gravity="end"
+            style="@style/TextViewDisplay"/>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

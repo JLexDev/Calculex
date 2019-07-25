@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/fragment_display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:name="jlexdev.com.calculex.DisplayFragment"
+        tools:layout="@layout/fragment_display"/>
+
+    <fragment
+        android:id="@+id/fragment_input"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:name="jlexdev.com.calculex.InputFragment"
+        tools:layout="@layout/fragment_input"/>
+
+
+</LinearLayout>

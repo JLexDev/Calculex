@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base button theme-->
+    <style name="ButtonTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark</item>
+    </style>
+
+
+    <!-- Button numbers style -->
+    <style name="ButtonNumbers" parent="ButtonTheme">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <!-- Button operators style -->
+    <style name="ButtonOperators" parent="ButtonTheme">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+
+    <!-- ScrollView display -->
+    <style name="ScrollViewDisplay">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">16sp</item>
+        <item name="android:paddingRight">16sp</item>
+    </style>
+
+    <!-- TextView display -->
+    <style name="TextViewDisplay">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+</resources>
