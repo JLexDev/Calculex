@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculatorActivity"
+    tools:context=".view.CalculatorActivity"
     android:elevation="2dp"
     android:orientation="vertical">
 
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:name="jlexdev.com.calculex.DisplayFragment"
+        android:name="jlexdev.com.calculex.view.DisplayFragment"
         tools:layout="@layout/fragment_display"/>
 
     <fragment
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="6"
-        android:name="jlexdev.com.calculex.InputFragment"
+        android:name="jlexdev.com.calculex.view.InputFragment"
         tools:layout="@layout/fragment_input"/>
 
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayFragment"
+    tools:context=".view.DisplayFragment"
     android:elevation="4dp"
     android:paddingTop="10dp"
     android:paddingBottom="10dp"
@@ -13,7 +13,7 @@
 
 
     <ImageButton
-        android:id="@+id/btn_menu"
+        android:id="@+id/ibtn_menu"
         android:layout_width="20dp"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_more"
@@ -22,7 +22,7 @@
         style="@style/Widget.AppCompat.Button.Borderless"/>
 
     <HorizontalScrollView
-        android:layout_below="@+id/btn_menu"
+        android:layout_below="@+id/ibtn_menu"
         style="@style/ScrollViewDisplay">
 
         <TextView

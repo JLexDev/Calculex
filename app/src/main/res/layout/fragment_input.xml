@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InputFragment"
+    tools:context=".view.InputFragment"
     android:orientation="horizontal">
 
     <!-- Numbers -->
@@ -75,19 +75,19 @@
 
         <!-- . - 0 - = -->
         <Button
-            android:id="@+id/btn_number_dot"
+            android:id="@+id/btn_dot"
             style="@style/ButtonNumbers"
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:text="@string/btn_number_dot"/>
 
         <Button
-            android:id="@+id/btn_number_zero"
+            android:id="@+id/btn_number_0"
             style="@style/ButtonNumbers"
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:text="@string/btn_number_zero"/>
 
         <Button
-            android:id="@+id/btn_number_equal"
+            android:id="@+id/btn_equal"
             style="@style/ButtonNumbers"
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:text="@string/btn_number_equal"/>
