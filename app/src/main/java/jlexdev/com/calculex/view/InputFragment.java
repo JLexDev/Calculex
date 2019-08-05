@@ -21,10 +21,10 @@ public class InputFragment extends Fragment {
 
     private ICalculatorContract.InputToPresenter inputToPresenter;
 
-    /* ¿Para qué sirve este SET?
+    // ¿Para qué sirve este SET?
     public void setInputToPresenter(ICalculatorContract.InputToPresenter inputToPresenter) {
         this.inputToPresenter = inputToPresenter;
-    } */
+    }
 
     /** Butterknife */
 
@@ -37,30 +37,37 @@ public class InputFragment extends Fragment {
         );
     }
 
+
     @OnClick({R.id.btn_divide, R.id.btn_multiplication, R.id.btn_substraction, R.id.btn_addition})
     public void onOperatorClick(Button b) {
         inputToPresenter.onOperatorClick(b.getText().toString());
     }
+
 
     @OnClick({R.id.btn_dot})
     public void onDecimalClick(Button b) {
         inputToPresenter.onDecimalClick();
     }
 
+
     @OnClick({R.id.btn_equal})
     public void onEvaluateClick(Button b) {
         inputToPresenter.onEvaluateClick();
     }
+
 
     @OnClick({R.id.btn_clean})
     public void onCleanClick(View v) {
         inputToPresenter.onCleanClick();
     }
 
+
     @OnLongClick({R.id.btn_clean})
-    public void onCleanLongClick(View v) {
+    public boolean onCleanLongClick(View v) {
         inputToPresenter.onCleanLongClick();
+        return true;
     }
+
 
     /** ----------- */
 

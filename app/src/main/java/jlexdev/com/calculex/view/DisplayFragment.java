@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -20,6 +21,11 @@ import jlexdev.com.calculex.R;
 public class DisplayFragment extends Fragment implements ICalculatorContract.View {
 
     private ICalculatorContract.DisplayToPresenter displayToPresenter;
+
+    // ¿Para qué sirve este SET?
+    public void setDisplayToPresenter(ICalculatorContract.DisplayToPresenter displayToPresenter) {
+        this.displayToPresenter = displayToPresenter;
+    }
 
     /** Butterknife */
 
@@ -59,11 +65,11 @@ public class DisplayFragment extends Fragment implements ICalculatorContract.Vie
 
     @Override
     public void showResult(String result) {
-
+        tvDisplay.setText(result);
     }
 
     @Override
     public void showMessage(String message) {
-
+        Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
     }
 }

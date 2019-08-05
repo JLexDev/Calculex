@@ -6,7 +6,7 @@
     <!-- Button operators -->
     <string name="btn_clean">C</string>
     <string name="btn_divide">/</string>
-    <string name="btn_multiplication">x</string>
+    <string name="btn_multiplication">*</string>
     <string name="btn_substraction">-</string>
     <string name="btn_addition">+</string>
 
